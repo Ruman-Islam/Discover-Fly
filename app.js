@@ -28,18 +28,16 @@ function priceCalculation() {
 
     document.getElementById("vat").innerText = vat;
     document.getElementById("sub-total").innerText = subTotal;
-    document.getElementById("total").innerText = total;    
+    document.getElementById("total").innerText = total;
 }
 
 // Booking button
-document.getElementById("confirm-btn").addEventListener('click', function () {
+document.getElementById("confirm-btn").addEventListener('click', function() {
     document.getElementById("total-area").style.display = "none";
     document.getElementById("invoice-area").style.display = "block";
     document.body.style.backgroundImage = "none";
-    
+
 })
-
-
 
 // Thank You
 
@@ -90,18 +88,18 @@ document.getElementById("confirm-btn").addEventListener('click', function () {
 //// })
 
 //// function subTotal() {
-////     const firstClassInput = document.getElementById("first-class");
-////     const firstClass = parseFloat(firstClassInput.value);
-////     const economyClassInput = document.getElementById("economy-class");
-////     const economyClass = parseFloat(economyClassInput.value);
-////     const subTotal = (firstClass * 150) + (economyClass * 100);
-////     document.getElementById("sub-total").innerText = subTotal;
+//// const firstClassInput = document.getElementById("first-class");
+//// const firstClass = parseFloat(firstClassInput.value);
+//// const economyClassInput = document.getElementById("economy-class");
+//// const economyClass = parseFloat(economyClassInput.value);
+//// const subTotal = (firstClass * 150) + (economyClass * 100);
+//// document.getElementById("sub-total").innerText = subTotal;
 
-////     const vatInput = document.getElementById("vat").innerText;
-////     const vat = parseFloat(vatInput);
-////     const totalVat = subTotal * 0.1;
-////     document.getElementById("vat").innerText = totalVat;
+//// const vatInput = document.getElementById("vat").innerText;
+//// const vat = parseFloat(vatInput);
+//// const totalVat = subTotal * 0.1;
+//// document.getElementById("vat").innerText = totalVat;
 
-////     const total = subTotal + vat;
-////     document.getElementById("total").innerText = total;
+//// const total = subTotal + vat;
+//// document.getElementById("total").innerText = total;
 //// }
