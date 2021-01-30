@@ -31,6 +31,18 @@ function priceCalculation() {
     document.getElementById("total").innerText = total;    
 }
 
+// Booking button
+document.getElementById("confirm-btn").addEventListener('click', function () {
+    document.getElementById("total-area").style.display = "none";
+    document.getElementById("invoice-area").style.display = "block";
+    document.body.style.backgroundImage = "none";
+    
+})
+
+
+
+// Thank You
+
 
 
 
