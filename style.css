@@ -87,6 +87,10 @@ a.active {
     text-align: center;
 }
 
+.plus-minus-btn button i {
+    margin: auto;
+}
+
 .booking-form .calculations {
     margin: 10px 0;
 }
