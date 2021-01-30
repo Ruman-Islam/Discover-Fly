@@ -13,7 +13,6 @@ function ticketCount(isIncrease, ticket) {
     priceCalculation();
 }
 
-
 // Function of total ticket price.
 function priceCalculation() {
     const firstClassInput = document.getElementById("first-class");
@@ -31,14 +30,7 @@ function priceCalculation() {
     document.getElementById("total").innerText = total;
 }
 
-// Booking button
-document.getElementById("confirm-btn").addEventListener('click', function() {
-    invoice("first", "first", "none", "block");
-})
-document.getElementById("confirm-btn").addEventListener('click', function() {
-    invoice("economy", "economy", "none", "block");
-})
-
+// Function of invoice calculation
 function invoice(ticket, invo, none, block) {
     document.getElementById("total-area").style.display = none;
     document.getElementById("invoice-area").style.display = block;
