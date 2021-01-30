@@ -41,7 +41,7 @@ function invoice(ticket, invo, none, block) {
     const ticketInput = document.getElementById(ticket + "-class");
     const quantity = parseFloat(ticketInput.value);
     document.getElementById("invo-" + invo).innerText = quantity;
-    // return Quantity;
+    // return quantity;
 }
 
 // Thank You
