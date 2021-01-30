@@ -36,11 +36,11 @@
                 <h3>Booking Flights</h3>
                 <div class="input-group">
                     <label for="">Flying From</label>
-                    <input class="inp-style" type="text" name="" class="form-control" placeholder="Dhake, Bangladesh">
+                    <input class="inp-style form-control" type="text" name="" placeholder="Dhake, Bangladesh">
                 </div>
                 <div class="input-group">
                     <label for="">Flying To</label>
-                    <input class="inp-style" type="text" name="" cla placeholder="New York, United States">
+                    <input class="inp-style form-control" type="text" name="" placeholder="New York, United States">
                 </div>
                 <div class="inputs">
                     <div class="input-group">
@@ -114,7 +114,8 @@
 
             <div class="booking-content">
                 <h1>discover <br> around the world</h1>
-                <p style="font-weight: 700;">Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+                <p style="font-weight: 700;">Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam
+                </p>
             </div>
         </main>
     </div>
@@ -135,47 +136,57 @@
                     <h5>Ruman Islam</h5>
                     <h6>Creative Director</h6>
                 </div>
-                <div class="col-md-4">
-                    <h6>Invoice Date:</h6>
-                    <h6>Invoice No:</h6>
-                    <h6>Account No:</h6>
-                </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="row mt-3" style="background-color: brown;">
-                <div class="col-md-6 ps-4">
+            <div class="row mt-3" style="background-color: brown; height: 40px;">
+                <div class="col-md-4 ps-4">
                     <p class="mt-2" style="color: white;">Item Description</p>
                 </div>
+                <div class="col-md-4">
+                    <p class="text-end mt-2" style="color: white;">Unit price</p>
+                </div>
 
-                <div class="col-md-6 ps-5">
-                    <p class="mt-2 text-end me-4 ps-5" style="color: white;">Unit Price</p>
+                <div class="col-md-4 ps-5">
+                    <p class="mt-2 text-end me-4 ps-4" style="color: white;">Quantity</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 ps-4">
-                    <p>First Class</p>
+                <div class="col-md-4 ps-4">
+                    <p class="mt-2">First Class</p>
                 </div>
-                <div class="col-md-6 text-end">
-                    <p class="me-5">$150</p>
+                <div class="col-md-4">
+                    <p class="mt-2 text-end me-4 ps-4">$150</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <p class="me-5 mt-2"><span id="invo-first">0</span></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 ps-4">
+                <div class="col-md-4 ps-4">
                     <p>Economy Class</p>
                 </div>
-                <div class="col-md-6 text-end">
-                    <p class="me-5">$100</p>
+                <div class="col-md-4">
+                    <p class="mt-2 text-end me-4 ps-4">$100</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <p class="me-5 mt-2"><span id="invo-economy">0</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="ms-2" style="font-weight: 700;">Charge 10% VAT</p>
                 </div>
             </div>
             <hr style="color: red; border: 2px solid red;">
             <div class="row">
                 <div class="col-md-6">
-                    <button class="btn btn-primary">Confirm</button>
+                    <button class="btn btn-primary mb-3 ms-3">Confirm</button>
                 </div>
                 <div class="col-md-4">
                     <p class="text-end">Total:</p>
                 </div>
                 <div class="col-md-2">
-                    <p>$00</p>
+                    <p>$ <span id="invo-total">00</span></p>
                 </div>
             </div>
         </div>

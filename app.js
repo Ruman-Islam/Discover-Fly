@@ -33,11 +33,24 @@ function priceCalculation() {
 
 // Booking button
 document.getElementById("confirm-btn").addEventListener('click', function() {
-    document.getElementById("total-area").style.display = "none";
-    document.getElementById("invoice-area").style.display = "block";
-    document.body.style.backgroundImage = "none";
-
+    invoice("first", "first", "none", "block");
 })
+document.getElementById("confirm-btn").addEventListener('click', function() {
+    invoice("economy", "economy", "none", "block");
+})
+
+function invoice(ticket, invo, none, block) {
+    document.getElementById("total-area").style.display = none;
+    document.getElementById("invoice-area").style.display = block;
+    document.body.style.backgroundImage = none;
+    const totalPrice = document.getElementById("total").innerText;
+    const priceFloat = parseFloat(totalPrice);
+    document.getElementById("invo-total").innerText = priceFloat;
+    const firstTicketInput = document.getElementById(ticket + "-class");
+    const firstQuantity = parseFloat(firstTicketInput.value);
+    document.getElementById("invo-" + invo).innerText = firstQuantity;
+    return firstQuantity;
+}
 
 // Thank You
 

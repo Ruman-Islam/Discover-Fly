@@ -81,6 +81,7 @@ a.active {
 }
 
 .plus-minus-btn button {
+    margin-top: 15px;
     font-size: 8px;
     cursor: pointer;
     text-align: center;
