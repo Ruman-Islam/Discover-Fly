@@ -39,8 +39,8 @@ function invoice(ticket, invo, none, block) {
     const priceFloat = parseFloat(totalPrice);
     document.getElementById("invo-total").innerText = priceFloat;
     const ticketInput = document.getElementById(ticket + "-class");
-    const Quantity = parseFloat(ticketInput.value);
-    document.getElementById("invo-" + invo).innerText = Quantity;
+    const quantity = parseFloat(ticketInput.value);
+    document.getElementById("invo-" + invo).innerText = quantity;
     // return Quantity;
 }
 
