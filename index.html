@@ -58,10 +58,10 @@
                         <input id="first-class" class="inp-style inp-width form-control" type="text" name="" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <button onclick="ticketCount(true, 'first')" class="btn btn-primary">
+                        <button onclick="ticketCount(true, 'first')" class="plusBtn">
                             <i class="fas fa-plus"></i>
                         </button>
-                        <button onclick="ticketCount(false, 'first')" class="btn btn-danger">
+                        <button onclick="ticketCount(false, 'first')" class="minusBtn">
                             <i class="fas fa-minus"></i>
                         </button>
                     </div>
@@ -73,10 +73,10 @@
                         <input id="economy-class" class="inp-style inp-width form-control" type="text" name="" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <button onclick="ticketCount(true, 'economy')" class="btn btn-primary">
+                        <button onclick="ticketCount(true, 'economy')" class="plusBtn">
                             <i class="fas fa-plus"></i>
                         </button>
-                        <button onclick="ticketCount(false, 'economy')" class="btn btn-danger">
+                        <button onclick="ticketCount(false, 'economy')" class="minusBtn">
                             <i class="fas fa-minus"></i>
                         </button>
                     </div>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <button onclick='invoice("first", "first", "none", "block"), invoice("economy", "economy", "none", "block")' class="btn-style btn btn-info">Book Now</button>
+                <button onclick='invoice("first", "first", "none", "visible"), invoice("economy", "economy", "none", "visible")' class="btn-style btn btn-info">Book Now</button>
             </div>
 
             <div class="booking-content">
@@ -120,11 +120,11 @@
         </main>
     </div>
     <!-- Invoice -->
-    <section id="invoice-area" class="mt-5">
+    <section id="invoice-area">
         <div class="invoice">
             <div class="row">
                 <div class="logo col-md-8 ps-4 pt-2">
-                    <!-- <img width="150px" class="img-fluid" src="images/logo.png" alt=""> -->
+                    <img width="150px" class="img-fluid" src="images/logo.png" alt="">
                 </div>
                 <div class="col-md-4 pe-3 pt-2">
                     <h1>Invoice</h1>
@@ -180,7 +180,7 @@
             <hr style="color: gray; border: 2px solid gray;">
             <div class="row">
                 <div class="col-md-6">
-                    <button class="btn btn-primary mb-3 ms-3">Confirm</button>
+                    <button id="confirm" class="btn btn-primary mb-3 ms-3">Confirm</button>
                 </div>
                 <div class="col-md-4">
                     <p class="text-end">Total:</p>

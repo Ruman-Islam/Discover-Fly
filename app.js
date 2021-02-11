@@ -31,10 +31,9 @@ function priceCalculation() {
 }
 
 // Function of invoice calculation
-function invoice(ticket, invo, none, block) {
-    document.getElementById("total-area").style.display = none;
-    document.getElementById("invoice-area").style.display = block;
-    document.body.style.backgroundImage = none;
+function invoice(ticket, invo, none, visible) {
+    document.getElementById("total-area").style.visibility = none;
+    document.getElementById("invoice-area").style.visibility = visible;
     const totalPrice = document.getElementById("total").innerText;
     const priceFloat = parseFloat(totalPrice);
     document.getElementById("invo-total").innerText = priceFloat;
@@ -43,5 +42,10 @@ function invoice(ticket, invo, none, block) {
     document.getElementById("invo-" + invo).innerText = quantity;
     // return quantity;
 }
+
+// invoice hidden
+document.getElementById("confirm").addEventListener('click', function() {
+    document.getElementById("invoice-area").style.visibility = 'hidden';
+})
 
 // Thank You

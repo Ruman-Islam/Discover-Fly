@@ -89,8 +89,11 @@ a.active {
 }
 
 .plus-minus-btn button {
-    margin-top: 15px;
-    font-size: 8px;
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 12px;
     cursor: pointer;
     text-align: center;
 }
@@ -152,7 +155,16 @@ a.active {
 }
 
 #invoice-area {
-    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.548);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    padding-top: 30px;
 }
 
 .invoice {
@@ -160,6 +172,21 @@ a.active {
     margin: 50px auto;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 5px 5px 10px gray;
-    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;   
+}
+
+.minusBtn {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.plusBtn {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-top: 20px;
 }
